@@ -5,7 +5,7 @@ function getProduct() {
   // 第一種 Call API 的方式用 ajax
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: `${ip}/api/login`,
+      url: `${ip}/api/product`,
       type: "GET",
       dataType: "json",
       success: function (data) {
