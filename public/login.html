@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASUS Login</title>
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <style>
+      .login-divide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /*CSS偽元素用法*/
+      .login-divide:after,
+      .login-divide:before {
+        background: #afadad;
+        content: "";
+        height: 1px;
+        width: 20%;
+      }
+      .login-icon {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+      }
+    </style>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </head>
+  <body style="background-color: #f3f3f3">
+    <header class="mian-header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Acer</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Predator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ConceptD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Planet9</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SpatialLabs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerpure</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">語言</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">尋找商店</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Acer ID
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="login.html">登入</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">註冊</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">什麼是Acer ID?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  購物車
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">空的</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="vh-100">
+      <!-- 登入畫面 -->
+      <div class="container justify-content-center align-items-center h-100">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col">
+            <div
+              class="row row-cols-1 row-cols-lg-2 border border-1 rounded-3 p-5 gx-5 overflow-hidden bg-white"
+            >
+              <div class="col border-end">
+                <p class="fs-4 text-center">Acer VIP大禮包</p>
+                <section style="font-size: 14px">
+                  <p>
+                    即日起，加入Acer會員即可獲得Acer
+                    STORE折價券大禮包，註冊Acer產品可獲得禮享回饋點數，並兌換多項贈品。
+                  </p>
+                  <p>
+                    升等至金卡或鑽石卡，再享點數加倍送、皇家俱樂部服務禮遇與維修折扣，多項會員權益等著您！
+                  </p>
+                  <a href="#">立即了解各級會員福利與分級說明</a>
+                  <br />
+                  <br />
+                  <p>*本活動僅限台灣地區參與</p>
+                </section>
+              </div>
+              <div class="col">
+                <div class="login">
+                  <h3 class="mb-4">登入帳號</h3>
+                  <form>
+                    <div class="form-floating mt-1">
+                      <input
+                        type="email"
+                        class="form-control email_input"
+                        id="floatingInput"
+                        placeholder="帳號"
+                        name="idno"
+                      />
+                      <label for="floatingInput">帳號</label>
+                    </div>
+                    <p style="font-size: 10px">請輸入電子郵件或電話號碼</p>
+                    <div class="form-floating mt-1">
+                      <input
+                        type="password"
+                        class="form-control password_input"
+                        id="floatingPassword"
+                        placeholder="密碼"
+                        name="password"
+                      />
+                      <label for="floatingPassword">密碼</label>
+                    </div>
+                    <p style="font-size: 10px">密碼為8~25字元，大小寫不同</p>
+                    <button
+                      class="w-100 btn btn-lg btn-primary mt-1"
+                      type="submit"
+                      value="Login"
+                      onclick="login()"
+                    >
+                      登入
+                    </button>
+                  </form>
+                  <p class="text-center mt-3">
+                    尚未註冊Acer會員?<a href="/sigin.html">立即註冊</a>
+                  </p>
+                  <div class="login-divide my-4">
+                    <span class="mx-3" style="font-size: 16px"
+                      >或選擇其他方式登入</span
+                    >
+                  </div>
+                  <div class="d-flex justify-content-around">
+                    <a href="#"
+                      ><img
+                        src="./assets/login/icon_fb.svg"
+                        alt="fb"
+                        class="login-icon"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/login/icon_google.svg"
+                        alt="google"
+                        class="login-icon"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/login/icon_line.svg"
+                        alt="line"
+                        class="login-icon"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/login/icon_apple.svg"
+                        alt="apple"
+                        class="login-icon"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="./assets/login/icon_microsoft.svg"
+                        alt="microsoft"
+                        class="login-icon"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <div class="row product row-cols-3">
+          <!-- 產品會透過javascript渲染在這裡 -->
+      </div>
+    </div>
+    <footer class="py-5">
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+      >
+        <p>© 2022 Company, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- <script>
+      console.log("login.js");
+    </script> -->
+    <script src="./IPconfig.js"></script>
+    <script src="./javascripts/login.js"></script>
+    <!-- <script>
+      $(document).ready(function () {
+        login();
+      });
+    </script> -->
+  </body>
+</html>

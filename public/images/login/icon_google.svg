@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="a">
+            <path data-name="矩形 147" transform="translate(-1 -1)" style="fill:none" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="组 329" transform="translate(1 1)" style="clip-path:url(#a)">
+        <path data-name="路径 676" d="M22 11.089a12.02 12.02 0 0 0-.2-2.218H11.225v4.194h6.04a4.975 4.975 0 0 1-2.24 3.272v2.72h3.628A10.389 10.389 0 0 0 22 11.09z" style="fill-rule:evenodd;fill:#4285f4"/>
+        <path data-name="路径 677" d="M11.224 21.685a10.942 10.942 0 0 0 7.429-2.627l-3.628-2.72a6.924 6.924 0 0 1-3.8 1.034 6.666 6.666 0 0 1-6.28-4.47H1.194v2.81a11.265 11.265 0 0 0 10.03 5.973" style="fill:#34a853;fill-rule:evenodd"/>
+        <path data-name="路径 678" d="M4.944 12.9a6.2 6.2 0 0 1 0-4.12V5.973h-3.75a10.527 10.527 0 0 0 0 9.739l3.75-2.81" style="fill:#fbbc05;fill-rule:evenodd"/>
+        <path data-name="路径 679" d="M11.224 4.312a6.177 6.177 0 0 1 4.29 1.622l3.22-3.11A10.994 10.994 0 0 0 11.224 0a11.265 11.265 0 0 0-10.03 5.973l3.75 2.81a6.666 6.666 0 0 1 6.28-4.47z" style="fill:#ea4335;fill-rule:evenodd"/>
+    </g>
+</svg>

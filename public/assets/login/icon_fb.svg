@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="a">
+            <path data-name="矩形 146" style="fill:none" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="组 328" style="clip-path:url(#a)">
+        <path data-name="路径 675" d="M24 12a12 12 0 1 0-13.95 11.85v-8.4h-3V12h3V9.3c0-3 1.8-4.65 4.5-4.65a14.274 14.274 0 0 1 2.7.3v3h-1.5a1.7 1.7 0 0 0-1.95 1.8V12h3.3l-.6 3.45h-2.85V24A12.107 12.107 0 0 0 24 12" style="fill:#1877f2"/>
+    </g>
+</svg>
